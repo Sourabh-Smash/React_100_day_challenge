@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const ScoreBox = () => {
+const ScoreBox = ({ totalTime }) => {
+  const changeTime = () => {
+    return totalTime === "easy" ? 5 : totalTime === "medium" ? 3 : 2;
+  };
+  const [changet,setChangeT]=useState(changeTime)
+  console.log(totalTime);
   return (
     <div className="scores">
       <h3>
         Time left:
-        <span id="time">0</span>
+        <span id="time" onChange={(e)=>{setChangeT(changet--);}}>{changet}</span>
       </h3>
       <h3>
         Score:
@@ -13,6 +18,6 @@ const ScoreBox = () => {
       </h3>
     </div>
   );
-}
+};
 
 export default ScoreBox;

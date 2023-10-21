@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import InputBox from "./InputBox";
+import WordToType from "./WordToType";
 
 const SelectLevel = () => {
   const properties = { type: "radio", name: "select", className: "Btn" };
@@ -41,6 +42,7 @@ const SelectLevel = () => {
           })}
         </div>
       </div>
+      <WordToType levelVal={ isChanged}/>
     </>
   );
 };

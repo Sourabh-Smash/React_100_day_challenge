@@ -13,15 +13,15 @@ function App() {
       <Header />
       <div className="container">
         <SelectLevel />
-        <WordToType />
-        <InputBox
+        {/* <WordToType /> */}
+        {/* <InputBox
           type="text"
           id="inputField"
           placeholder="Type Here!"
           autofocus={true}
-        />
-        <ResultMessage />
-        <ScoreBox />
+        /> */}
+        {/* <ResultMessage /> */}
+        {/* <ScoreBox /> */}
         <InstructionBox />
       </div>
     </>
