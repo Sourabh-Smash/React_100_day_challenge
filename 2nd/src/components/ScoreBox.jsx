@@ -10,7 +10,7 @@ const ScoreBox = ({ totalTime }) => {
     <div className="scores">
       <h3>
         Time left:
-        <span id="time" onChange={(e)=>{setChangeT(changet--);}}>{changet}</span>
+        <span id="time">{changet}</span>
       </h3>
       <h3>
         Score:
