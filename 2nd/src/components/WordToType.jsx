@@ -4,7 +4,7 @@ import InputBox from "./InputBox";
 import ResultMessage from "./ResultMessage";
 
 const WordToType = ({ levelVal }) => {
-  console.log(levelVal);
+  // console.log(levelVal);
   const changeLevel = () => {
     return levelVal === "easy" ? 5000 : levelVal === "medium" ? 3000 : 2000;
   };

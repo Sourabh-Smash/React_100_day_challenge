@@ -1,5 +1,4 @@
 import React from "react";
-import ScoreBox from "./ScoreBox";
 
 const InputBox = (props) => {
   // console.log(others);
@@ -16,7 +15,6 @@ const InputBox = (props) => {
         defaultChecked={props.defaultChecked}
         onChange={props.onChange}
       />
-     {/* <ScoreBox/> */}
     </>
   );
 };
